@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:bethany.zc@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/bzc220">github.com/bzc220</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html>
+	<head>
+		{% include head.html %}
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<!-- 页面主体 -->
+		{{ content }}
+
+		<!-- 引用wow.js的动画效果 -->
+		<script src="/assets/js/wow.js"></script>
+		<script>
+			var wow = new WOW({
+				boxClass: 'wow',
+				animateClass: 'animated',
+				// offset: 5,
+				mobile: true,
+				live: true
+			});
+wow.init();
+		</script>
+		<!-- 页面刷新回到顶部 -->
+		<script>
+			window.onbeforeunload = function(){
+				//刷新后页面自动回到顶部
+				document.documentElement.scrollTop = 0;  //ie下
+				document.body.scrollTop = 0;  //非ie
+			}
+		</script>
+
+	</body>
+</html>
