@@ -1,18 +1,9 @@
 ---
-layout: default
-title: your awesome title
-page-title: your awesome page-title.
-home-title: your awesome home-title.
-description: description
+layout: index
+section-type: index
+sitemap:
+  priority: 1.0
 ---
-
-{% include header.html %}
-{% include boot.html %}
-<main>
-    {% include title.html %}
-    <ul class="post-list">
-      {% include posts_paginator.html %}
-    </ul>
-</main>
-{% include pageNav.html %}
-{% include footer.html %}
+<!--
+If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
+-->
