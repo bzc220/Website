@@ -1,0 +1,44 @@
+/*
+Bethany Chen
+*/
+
+BODY { 
+    background: #000000;
+    }
+    
+    #button{
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        border: 2px solid rgb(79, 178, 218); /* Green */
+        margin-top: 5%;
+        margin-left: 5%;
+        border-radius: 5px;
+    }
+    
+    /* #table{
+      width: 26vmin;
+      height: 26vmin;
+    } */
+    
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+      display: table-cell;
+      width: 120px;
+      height: 120px;
+      border: 1px solid white;
+      background: url("flower.png"); 
+      background-color: blue;
+      cursor: pointer;
+    }
+    
+    .tile1 {background-position: 0 0;}
+    .tile2 {background-position: 50% 0 ;}
+    .tile3 {background-position: 100% 0;}
+    .tile4 {background-position: 0 50%;}
+    .tile5 {background-position: 50% 50% ;}
+    .tile6 {background-position: 100% 50%;}
+    .tile7 {background-position: 0 100%;}
+    .tile8 {background-position: 50% 100%;}
+    .tile9 {background: white; cursor: default;}
+    
+    
