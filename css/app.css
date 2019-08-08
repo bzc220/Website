@@ -7,8 +7,8 @@ BODY {
     }
     
     #button{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         font-size: 22px;
         border: 2px solid rgb(79, 178, 218); /* Green */
         margin-top: 5%;
@@ -26,8 +26,8 @@ BODY {
       width: 120px;
       height: 120px;
       border: 1px solid white;
-      background: url("flower.png"); 
-      background-color: blue;
+      background: url("../img/flower.png"); 
+      background-color: aquamarine;
       cursor: pointer;
     }
     
