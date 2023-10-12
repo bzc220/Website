@@ -41,7 +41,3 @@ exclude:
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md 
-
-- name: jekyll-deploy-gh-pages
-  uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
-            
